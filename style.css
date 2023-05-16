@@ -75,11 +75,6 @@ figcaption {
   padding: 1.5rem;
 }
 
-.citation {
-  background: #c0c0c0;
-  padding: 1rem;
-}
-
 .conclusion {
   padding: 1rem;
 }
@@ -100,6 +95,32 @@ figcaption {
   padding: 1rem;
 }
 
+.list {
+  border: solid;
+}
+
+.list li {
+  list-style: none;
+  padding: 1.5rem;
+  border: solid rgb(2, 57, 74);
+}
+
+li:nth-child(1) {
+  background-image: url(https://raw.githubusercontent.com/becodeorg/BXL-Johnson-09-main-repo/main/1.The-Field/03-Frontend-101-Progressive_enhancement/bien.png?token=GHSAT0AAAAAACAKY3SYEZGFUYBFRWVEHGOWZDDPEJA);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+li:nth-child(2) {
+  background-image: url(https://raw.githubusercontent.com/becodeorg/BXL-Johnson-09-main-repo/main/1.The-Field/03-Frontend-101-Progressive_enhancement/mal.png?token=GHSAT0AAAAAACAKY3SYASKYGCWHUYWSK6HQZDDNLEA);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+li:nth-child(3) {
+  background-image: url(https://raw.githubusercontent.com/becodeorg/BXL-Johnson-09-main-repo/main/1.The-Field/03-Frontend-101-Progressive_enhancement/chat.png?token=GHSAT0AAAAAACAKY3SZPTG75RVOERSSHHJIZDDNLQQ);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 blockquote {
   margin: 0 25rem;
   width: 50%;
@@ -107,6 +128,26 @@ blockquote {
   background-color: #c0c0c0;
   border-left: 1rem solid firebrick;
   padding: 80px 0 80px 30px;
+  font-style: italic;
+}
+.farmer {
+  background-color: rgb(236, 178, 139);
+}
+
+.neighbor {
+  background-color: rgb(211, 215, 239);
+}
+
+th span {
+  text-transform: capitalize;
+}
+
+.good {
+  color: green;
+}
+
+.bad {
+  color: red;
 }
 
 table {
