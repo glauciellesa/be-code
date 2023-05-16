@@ -5,7 +5,15 @@
 }
 
 body {
-  margin: 2rem;
+  margin: 4rem;
+  width: 90%;
+  background-image: linear-gradient(to right, #f0e9d7ba, #d9e4efb9),
+    url(./assets/img/myBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: static;
+  bottom: 0;
+  right: 0; */
 }
 
 header {
@@ -13,12 +21,18 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
-  box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px rgb(2, 57, 74);
 }
 
 a {
   text-decoration: none;
   color: #222;
+}
+p {
+  color: #222;
+  font-family: serif;
+  line-height: 32px; /* within paragraph */
+  margin-bottom: 30px;
 }
 
 .title {
@@ -62,7 +76,7 @@ figcaption {
 }
 
 .citation {
-  background: rgb(167, 166, 166);
+  background: #c0c0c0;
   padding: 1rem;
 }
 
@@ -86,8 +100,17 @@ figcaption {
   padding: 1rem;
 }
 
+blockquote {
+  margin: 0 25rem;
+  width: 50%;
+  font-size: 160%;
+  background-color: #c0c0c0;
+  border-left: 1rem solid firebrick;
+  padding: 80px 0 80px 30px;
+}
+
 table {
-  padding: 0 1rem;
+  padding: 2rem 0;
 }
 
 td,
