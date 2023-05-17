@@ -1,4 +1,4 @@
-# progressive-enhancement
+# Progressive enhancement
 
 <p align="center">
 <img src="assets/img/myWebSite.gif" width="100%" alt="Job's website">
