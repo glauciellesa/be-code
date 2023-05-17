@@ -14,7 +14,6 @@ ul a {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(30, 147, 204);
 }
 
 /* _________________________NAVBAR___________________________ */
@@ -47,6 +46,9 @@ header {
 }
 
 /* _________________________Section 1___________________________ */
+.blueSection {
+  background-color: rgb(30, 147, 204);
+}
 /* _________________________Top___________________________ */
 .top {
   display: flex;
@@ -83,4 +85,64 @@ button {
   font-size: 1.5rem;
   text-align: center;
   color: rgb(40, 40, 40);
+}
+/* _________________________Information___________________________ */
+.information {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.inf-title {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+/* _________________________Sponsors___________________________ */
+
+.sponsors {
+  background-color: rgb(238, 238, 238);
+}
+/* _________________________Actions___________________________ */
+
+.actions {
+  height: 12rem;
+  padding-right: 4rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.restApi,
+.Docs {
+  background-color: rgb(22, 88, 130);
+  padding: 1rem 3rem;
+}
+
+.building {
+  background-color: rgb(233, 144, 2);
+  padding: 1rem 3rem;
+}
+
+/* _________________________FOOTER___________________________ */
+
+footer {
+  padding: 1rem;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+footer li,
+.copyright {
+  width: 2rem;
 }
