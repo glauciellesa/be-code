@@ -107,6 +107,13 @@ button {
 .sponsors {
   background-color: rgb(238, 238, 238);
 }
+
+@media (max-width: 500px) {
+  .sponsors img {
+    display: none;
+  }
+}
+
 /* _________________________Actions___________________________ */
 
 .actions {
@@ -132,7 +139,7 @@ button {
 /* _________________________FOOTER___________________________ */
 
 footer {
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgb(40, 40, 40);
   display: flex;
   /* align-content: center; */
@@ -144,5 +151,5 @@ footer {
 
 footer li,
 .copyright {
-  width: 2rem;
+  width: 3rem;
 }
