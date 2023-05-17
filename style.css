@@ -24,15 +24,32 @@ header {
   box-shadow: 1px 1px rgb(2, 57, 74);
 }
 
+h2 {
+  margin-top: 3rem;
+}
+
 a {
   text-decoration: none;
   color: #222;
 }
+
 p {
   color: #222;
   font-family: serif;
   line-height: 32px; /* within paragraph */
   margin-bottom: 30px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.citation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -44,11 +61,10 @@ p {
 }
 
 figure {
-  border: thin #c0c0c0 solid;
   display: flex;
   flex-flow: column;
   margin: 5rem;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 figcaption {
@@ -57,6 +73,10 @@ figcaption {
   font: italic smaller sans-serif;
   padding: 3px 0;
   text-align: center;
+}
+
+.title {
+  padding: 4rem 0;
 }
 
 .subtitle {
@@ -79,6 +99,20 @@ figcaption {
   padding: 1rem;
 }
 
+.citation p {
+  width: 40rem;
+  display: inline-block;
+}
+
+.citation figure {
+  width: 40rem;
+  margin: 0 0 0 6rem;
+}
+
+.citation img {
+  width: 400px;
+}
+
 .quoteAuthor {
   text-align: right;
 }
@@ -96,7 +130,7 @@ figcaption {
 }
 
 .list {
-  border: solid;
+  width: 80rem;
 }
 
 .list li {
@@ -106,17 +140,17 @@ figcaption {
 }
 
 li:nth-child(1) {
-  background-image: url(https://raw.githubusercontent.com/becodeorg/BXL-Johnson-09-main-repo/main/1.The-Field/03-Frontend-101-Progressive_enhancement/bien.png?token=GHSAT0AAAAAACAKY3SYEZGFUYBFRWVEHGOWZDDPEJA);
+  background-image: url(assets/img/bien.png);
   background-repeat: no-repeat;
   background-position: right;
 }
 li:nth-child(2) {
-  background-image: url(https://raw.githubusercontent.com/becodeorg/BXL-Johnson-09-main-repo/main/1.The-Field/03-Frontend-101-Progressive_enhancement/mal.png?token=GHSAT0AAAAAACAKY3SYASKYGCWHUYWSK6HQZDDNLEA);
+  background-image: url(assets/img/mal.png);
   background-repeat: no-repeat;
   background-position: right;
 }
 li:nth-child(3) {
-  background-image: url(https://raw.githubusercontent.com/becodeorg/BXL-Johnson-09-main-repo/main/1.The-Field/03-Frontend-101-Progressive_enhancement/chat.png?token=GHSAT0AAAAAACAKY3SZPTG75RVOERSSHHJIZDDNLQQ);
+  background-image: url(assets/img/chat.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -151,7 +185,8 @@ th span {
 }
 
 table {
-  padding: 2rem 0;
+  padding: 0 0 0 2rem;
+  width: 80rem;
 }
 
 td,
@@ -183,6 +218,34 @@ table tr td:nth-child(2) {
 caption {
   padding: 10px;
   caption-side: bottom;
+}
+
+.notification {
+  background: #ffffdd;
+  padding: 0.5rem 1rem;
+  border: 3px solid #ddddcc;
+  width: 250px;
+  font-weight: bold;
+  color: #333300;
+  position: fixed;
+  right: 1rem;
+  bottom: 2%;
+}
+
+.scrollupUP {
+  position: fixed;
+  right: 1rem;
+  bottom: 17%;
+}
+
+.scrollupUP img {
+  width: 2rem;
+  color: red;
+}
+
+.scrollupUP:hover {
+  width: 2.5rem;
+  background-color: rgb(153, 215, 235);
 }
 
 footer {
