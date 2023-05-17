@@ -4,6 +4,10 @@
 <img src="assets/img/myWebSite.gif" width="100%" alt="Job's website">
 </p>
 
+<p align="center">
+<img src="assets/img/myTurtu.gif" width="100%" alt="Job's website">
+</p>
+
 This is a webpage constructed according to BeCode Junior Developer training course [documentation](https://github.com/becodeorg/BXL-Johnson-09-main-repo/tree/main/1.The-Field/03-Frontend-101-Progressive_enhancement).
 
 # Technologies 🏷️
