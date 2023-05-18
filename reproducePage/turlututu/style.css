@@ -25,13 +25,18 @@ body {
 }
 
 /* _________________________NAVBAR___________________________ */
+.full-black {
+  box-shadow: 0 0 0 100vmax rgb(40, 40, 40);
+  clip-path: inset(0 -100vmax);
+}
+
 header,
 footer {
   background-color: rgb(40, 40, 40);
   width: 100%;
 }
 
-header .container {
+header {
   padding: 1rem;
   display: flex;
   /* align-content: center; */
