@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page</title>
     <link rel="icon" href="./assets/img/AvatarMaker (2).png" type="image/png" />
+    <!-- ==== UNICONS ==== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body class="container">
     <header class="full-black">
       <div class="myLogo" id="home">Glaucielle</div>
+      <!-- sr-only- is just to tell to screen reader what is the img menu -->
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
       <nav class="navBar">
-        <ul>
+        <ul id="primary-navigation">
           <li>
             <a href="#feature">Feature</a>
           </li>
