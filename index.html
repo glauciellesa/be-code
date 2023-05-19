@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --header-height: 20px;
+    }
+    body {
+      margin: 0;
+    }
+    a {
+      min-height: var(--header-height);
+      display: inline-block;
+    }
+    iframe {
+      display: block; /* iframes are inline by default */
+      border: none; /* reset default border */
+      height: calc(100vh - var(--header-height));
+      width: 100vw;
+    }
+  </style>
+  <body>
+    <a href="/be-code/my-becode" target="icontent"> 1 - My readme </a>
+    <a href="/be-code/chinese-farmer" target="icontent"
+      >2 - Progressive enhancement
+    </a>
+    <a href="/be-code/turlututu" target="icontent"> 2.1 - Turlututu copy</a>
+    <a href="/be-code/vs-card" target="icontent"> 2.1 - VS Card</a>
+    <iframe
+      id="icontent"
+      name="icontent"
+      src="/github-pages-test/project-a"
+      scrolling="no"
+      allowTransparency="true"
+    ></iframe>
+  </body>
+</html>
