@@ -1,7 +1,7 @@
 # v-card
 
  <p align="center">
-<img src="assets/myVstf.png" width="100%" alt="Job's website">
+<img src="assets/myCard.png" width="100%" alt="My Card website">
 </p>
 
 This is a small one page serving as a virtual business card. constructed according to BeCode Junior Developer training course [documentation](https://github.com/becodeorg/BXL-Johnson-09-main-repo/tree/main/1.The-Field/04-Frontend-102-Modern_syntax).
