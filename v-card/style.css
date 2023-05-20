@@ -73,13 +73,14 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   width: 30%;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
   background-color: var(--first-color);
   color: var(--text-color-light);
 }
 
-.logo {
+.logo img {
   font-size: var(--big-font-size);
+  width: 10rem;
 }
 
 .contact,
@@ -162,7 +163,7 @@ button {
   color: var(--text-color);
 }
 
-img {
+.my-img img {
   position: absolute;
   width: 20rem;
   top: 2.5rem;
