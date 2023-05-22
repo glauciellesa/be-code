@@ -1,6 +1,6 @@
 /* III - VAT
 Write an algorithm which receives a price without VAT and returns the price with VAT with a rate of 21%. */
-const vat = 21;
+let vat = 21;
 function calculateVat(price) {
   return price * (vat / 100) + price;
 }
