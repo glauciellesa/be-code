@@ -31,7 +31,7 @@ const printFromNegativeTopositive = (number) => {
   }
 };
 
-printFromNegativeTopositive(3);
+/* printFromNegativeTopositive(3); */
 
 const printOddNumber = (number) => {
   for (let i = 1; i <= number; i++) {
@@ -41,4 +41,4 @@ const printOddNumber = (number) => {
   }
 };
 
-/* printOddNumber(9); */
+printOddNumber(20);
