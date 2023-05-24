@@ -73,7 +73,7 @@
   } */
 }
 
-@media (width < 300px) {
+@media (width <= 300px) {
   .container {
     background-color: rgb(239, 186, 186);
     font-size: 3rem;
