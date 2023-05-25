@@ -46,52 +46,53 @@ a {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   height: 100vh;
   font-family: var(--body-font);
 }
 
-.content {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  max-width: 60rem;
-  height: 35rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "main"
+    "social";
+}
+
+.logo {
+  background: var(--first-color);
+  grid-area: logo;
+}
+
+.logo img {
+  width: 8rem;
 }
 
 .social-info {
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 30%;
-  padding: 1rem 2rem 2rem;
+  grid-area: social;
+  padding: 1rem;
   background-color: var(--first-color);
   color: var(--text-color-light);
 }
 
-.logo img {
-  font-size: var(--big-font-size);
-  width: 10rem;
-}
-
-.contact,
-.home-social {
-  align-items: flex-start;
+.contact {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  padding-right: 2rem;
+  width: 100%;
 }
 
 .my-social {
-  align-items: flex-start;
+  padding-top: 1rem;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
@@ -102,16 +103,19 @@ a {
   padding-right: 1rem;
 }
 
-.description {
-  background-color: var(--description-color);
-}
-
 .description-container {
-  margin: 0 2rem 0 20rem;
+  grid-area: main;
+  background-color: var(--description-color);
+  padding: 1rem;
+  display: grid;
+  grid-template-areas:
+    "my-img"
+    "description";
+  grid-column: 1fr;
+  gap: 1rem;
 }
 
 .title {
-  align-items: flex-start;
   font-size: var(--big-font-size);
   font-weight: var(--font-semi-bold);
 }
@@ -122,7 +126,7 @@ a {
 
 .title-profession {
   color: var(--text-color-alt);
-  margin-top: var(--mb-0-5);
+  margin: var(--mb-0-5) 0;
   font-weight: var(--font-medium);
 }
 
@@ -163,9 +167,42 @@ button {
   color: var(--text-color);
 }
 
+.my-img {
+  padding-top: 1rem;
+  width: 100%;
+}
+
 .my-img img {
-  position: absolute;
-  width: 20rem;
-  top: 2.5rem;
-  left: 26%;
+  width: 12rem;
+}
+
+@media (width > 840px) {
+  .content {
+    position: absolute;
+    max-width: 65rem;
+    grid-template-areas:
+      "logo main"
+      "social main";
+  }
+  .description-container {
+    height: 35rem;
+    padding-left: 20rem;
+  }
+  .logo,
+  .social-info {
+    width: 18rem;
+  }
+
+  .my-img img {
+    position: absolute;
+    width: 20rem;
+    top: 2.5rem;
+    left: 26%;
+  }
+}
+@media (300px < width <= 840px) {
+  .description-container {
+    justify-content: center;
+    grid-template-areas: "my-img description";
+  }
 }
