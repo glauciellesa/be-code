@@ -50,7 +50,6 @@ a {
   align-items: center;
   justify-content: center;
   background-color: black;
-  height: 100vh;
   font-family: var(--body-font);
 }
 
@@ -177,6 +176,9 @@ button {
 }
 
 @media (width > 840px) {
+  .container {
+    height: 100vh;
+  }
   .content {
     position: absolute;
     max-width: 65rem;
@@ -200,7 +202,10 @@ button {
     left: 26%;
   }
 }
-@media (300px < width <= 840px) {
+@media (400px < width <= 840px) {
+  .container {
+    height: 100vh;
+  }
   .description-container {
     justify-content: center;
     grid-template-areas: "my-img description";
