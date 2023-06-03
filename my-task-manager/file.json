@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    { "task": "read", "status": "doing" },
+    { "task": "read", "status": "doing" }
+  ]
+}
