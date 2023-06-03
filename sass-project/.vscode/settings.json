@@ -1,0 +1,17 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/dist/css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveSassCompile.settings.includeItems": [],
+  "liveSassCompile.settings.useNewCompiler": false,
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.forceBaseDirectory": "",
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.rootIsWorkspace": null,
+  "liveSassCompile.settings.showAnnouncements": null
+}

@@ -1,0 +1,11 @@
+{
+  "liveSassCompile.settings.showAnnouncements": null,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/sass-project/dist/css",
+      "savePathReplacementPairs": null
+    }
+  ]
+}
