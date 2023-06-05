@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Source+Serif+Pro:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -185,10 +184,11 @@
 }
 
 .role {
-  padding: 0.3rem;
+  padding: 0.4rem;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 0.6rem;
+  font-weight: 700;
   width: 100%;
   text-align: center;
   border-bottom: 1.8px solid #cfcece9c;
@@ -205,9 +205,10 @@
 }
 
 .card-team img {
+  padding: 1rem;
   object-fit: cover;
-  width: 7rem;
-  height: 7rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
 }
 
@@ -217,19 +218,24 @@
 
 .name {
   font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 0.6rem;
 }
 
 .role-description {
-  color: #3e3d3d;
+  font-family: sans-serif;
+  color: #77777c;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
   padding: 0.4rem 1.3rem;
 }
 
 .social-media {
   display: flex;
   gap: 1rem;
-  padding: 0.3rem 1rem;
+  padding: 0.8rem 1.3rem;
   border-radius: 3rem;
   border: 1px solid #cfcece9c;
 }
@@ -253,5 +259,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+  }
+  .card-team {
+    width: 20rem;
   }
 }
