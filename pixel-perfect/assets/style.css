@@ -259,14 +259,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .card-team {
     width: 20rem;
-  }
-}
-
-@media (width > 400px) {
-  .container-team {
-    flex-wrap: wrap;
   }
 }
