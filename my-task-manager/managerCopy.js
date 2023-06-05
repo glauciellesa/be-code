@@ -12,45 +12,49 @@ const readTasks = () => {
   return new Promise((resolve, reject) => {
     fs.readFile("file.json", function (err, data) {
       if (err) throw err;
-      const tasks = JSON.parse(tasks);
+      const tasks = JSON.parse(data);
       resolve(tasks);
     });
   });
 };
-const writeTasks = (tasks) => {
+const writeTasks = (task) => {
   return new Promise((resolve, reject) => {
-    const tasksString = JSON.stringify(tasks);
-    fs.writeFile("file.json", tasksString, () => {
-      resolve();
-    });
+    const tasksString = JSON.stringify(task);
+    fs.writeFile("file.json", tasksString, () => {});
   });
 };
 
 const addTask = () => {
-  rl.question("Which task do you wanna add: ", async (task) => {
+  rl.question("Which task do you wanna add? ", async (task) => {
     const tasks = await readTasks();
     tasks.push(task);
     await writeTasks(tasks);
+    rl.close();
   });
 };
 
 const removeTask = () => {
-  rl.question("Which task do you wanna remove: ", async (rmtask) => {
+  rl.question("Which task do you wanna remove? ", async (rmtask) => {
     const tasks = await readTasks();
     const found = tasks.indexOf(rmtask);
-    console.log(found);
     if (found > -1) {
-      //if found
+      //check if found exist, if so execute
       tasks.splice(found, 1);
     }
-
     await writeTasks(tasks);
+    doTask();
   });
 };
 
 const markAsDone = () => {
-  rl.question("Which task do you wanna add: ", (task) => {
-    console.log("Your new task: ", task);
+  rl.question("Which task do you wanna finish? ", async (task) => {
+    const tasks = await readTasks();
+    const found = tasks.indexOf(task);
+    let taskUpdated = `${tasks[found]} - done`;
+
+    tasks.push(taskUpdated);
+    await writeTasks(tasks);
+    rl.close();
   });
 };
 
@@ -78,10 +82,7 @@ function doTask() {
           console.log("bye");
           rl.close();
           return;
-        default:
-          console.log(welcome);
       }
-
       rl.prompt();
     }).on("close", function () {
       resolve();

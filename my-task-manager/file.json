@@ -1,6 +1,1 @@
-{
-  "tasks": [
-    { "task": "read", "status": "doing" },
-    { "task": "read", "status": "doing" }
-  ]
-}
+["task1","task","fim","fim - done","task - done"]
