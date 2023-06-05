@@ -264,3 +264,9 @@
     width: 20rem;
   }
 }
+
+@media (width > 400px) {
+  .container-team {
+    flex-wrap: wrap;
+  }
+}
