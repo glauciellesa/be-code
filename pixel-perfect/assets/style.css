@@ -1,3 +1,45 @@
-body {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 40rem;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+
+  color: rgb(88, 89, 90);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.06),
+    0 -2px 20px 2px rgb(255, 255, 255);
+}
+
+.page {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.container h1 {
+  color: rgb(54, 56, 58);
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.page-info {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background-color: rgb(46, 50, 56);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  border: none;
 }
