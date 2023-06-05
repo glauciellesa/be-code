@@ -1,17 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  & ul {
+    list-style: none;
+  }
+}
 
 .container {
+  padding: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .content {
   width: 40rem;
   padding: 2rem;
   font-family: "Roboto", sans-serif;
-
   color: rgb(88, 89, 90);
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.06),
     0 -2px 20px 2px rgb(255, 255, 255);
@@ -42,4 +54,107 @@
   color: rgb(255, 255, 255);
   padding: 1rem;
   border: none;
+}
+
+/* ======= Complex layout =======*/
+
+.complex-pixel-plan {
+  padding: 0;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.06),
+    0 -2px 20px 2px rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #3e3d3d;
+  width: 30rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-complex {
+  padding-top: -1rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-bottom: 1.8px solid #cfcece9c;
+  line-height: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.description-title-complex {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1rem 6rem;
+  text-align: center;
+  border-bottom: 1.8px solid #cfcece9c;
+}
+
+.price-container {
+  border-bottom: 1.8px solid #cfcece9c;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.price {
+  font-family: "Caladea", serif;
+  display: inline;
+  color: rgb(39, 178, 154);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  border-right: 1.8px solid #cfcece9c;
+  padding-right: 1rem;
+}
+
+.price-description {
+  padding-left: 1rem;
+  color: rgb(130, 130, 130);
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  width: 6rem;
+  text-align: initial;
+}
+
+.details {
+  padding: 2rem;
+  color: rgb(45, 44, 44);
+}
+
+.title-detail {
+  padding-bottom: 1rem;
+}
+
+.title-detail span {
+  font-weight: bold;
+}
+
+.title-detail i,
+.list i {
+  padding-right: 1rem;
+}
+
+.list {
+  padding-bottom: 2rem;
+}
+
+.list li {
+  color: #3e3d3d;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.fa-circle-info {
+  color: #dad9d9;
+}
+.btn-plan {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgb(239, 129, 82);
 }
