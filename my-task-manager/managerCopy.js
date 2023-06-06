@@ -29,7 +29,6 @@ const addTask = () => {
     const tasks = await readTasks();
     tasks.push(task);
     await writeTasks(tasks);
-    rl.close();
   });
 };
 
@@ -50,11 +49,9 @@ const markAsDone = () => {
   rl.question("Which task do you wanna finish? ", async (task) => {
     const tasks = await readTasks();
     const found = tasks.indexOf(task);
-    let taskUpdated = `${tasks[found]} - done`;
-
-    tasks.push(taskUpdated);
+    tasks[found] = `${task} - done`;
+    console.log(tasks);
     await writeTasks(tasks);
-    rl.close();
   });
 };
 
