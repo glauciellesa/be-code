@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My projects</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
 
   <body>
     <div class="container">
-      <div class="content-menu">
+      <div id="content" class="content-menu">
         <div class="becode">
           <h1>Brussel's Johnson 09</h1>
           <p>This is a repository for my BeCode projects.</p>
         </div>
-        <div class="projects">
-          <ul class="navbar">
+        <div id="projects" class="projects">
+          <div id="showMenu" class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="closeMenu" class="close-menu hideNavbar">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+          </div>
+          <ul id="navbar" class="navbar hideNavbar">
             <li>
               <a href="/be-code/my-becode" target="icontent"> 1 - My readme </a>
             </li>
@@ -41,13 +51,14 @@
           </ul>
         </div>
       </div>
-
+      <!--src="amazeing/index.html" -->
       <iframe
         id="icontent"
         name="icontent"
-        src="/be-code/v-card"
+        src="/beCode-hill/amazeing"
         allowTransparency="true"
       ></iframe>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
